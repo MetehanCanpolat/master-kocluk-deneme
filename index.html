@@ -31,7 +31,96 @@
         <li><a class="green-hover" href="contact.html">İLETİŞİM</a></li>
       </ul>
     </nav>
-    <section></section>
+    <section>
+      <div class="slideshow-container">
+        <div class="mySlides fade-1">
+          <div class="slide-container">
+            <div class="title">
+              <p>MASTER KOÇLUK 1</p>
+            </div>
+            <div class="text">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
+                corrupti incidunt porro, illo molestiae cum blanditiis debitis!
+                Nihil dolorum provident aperiam ipsa, error dolores earum enim
+                amet eligendi cum? Excepturi totam reiciendis inventore alias
+                quaerat architecto vitae aperiam sunt deserunt aliquam
+                consectetur eligendi eaque, ipsa voluptatum! Eos iure veritatis
+                ea.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade-2">
+          <div class="slide-container">
+            <div class="title">
+              <p>MASTER KOÇLUK 2</p>
+            </div>
+            <div class="text">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                corporis at earum asperiores qui architecto dolore pariatur
+                tempore, quasi perspiciatis ullam labore, velit unde nobis
+                debitis ducimus numquam optio in? Rem quis maiores vel tenetur
+                tempora blanditiis magnam, necessitatibus quibusdam sint
+                voluptatem non omnis architecto laboriosam minima atque? Unde,
+                labore!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mySlides fade-3">
+          <div class="slide-container">
+            <div class="title">
+              <p>MASTER KOÇLUK 3</p>
+            </div>
+            <div class="text">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+                corporis at earum asperiores qui architecto dolore pariatur
+                tempore, quasi perspiciatis ullam labore, velit unde nobis
+                debitis ducimus numquam optio in? Rem quis maiores vel tenetur
+                tempora blanditiis magnam, necessitatibus quibusdam sint
+                voluptatem non omnis architecto laboriosam minima atque? Unde,
+                labore!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 5000); // Change image every 2 seconds
+        }
+      </script>
+    </section>
     <footer>
       <div class="footer-container">
         <div></div>
