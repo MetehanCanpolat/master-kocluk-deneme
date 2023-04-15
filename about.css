@@ -7,14 +7,8 @@
   body{
     font-family: 'Ubuntu', sans-serif;
   }
-  section{
-    background-image: url("image/students-1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-  }
-  
 
+  
 
   footer{
     height: 200px;
@@ -125,7 +119,7 @@
     transition: .5s;
   } 
   a.yellow-hover, a:hover{
-    background: #CC9933;
+    background: #ffe100;
   }
   .red-hover:hover{
     background: #FF0099;
@@ -133,6 +127,13 @@
   .green-hover:hover{
     background: #66CC66;
   }
+  .orange-hover:hover{
+    background: orange;
+  }
+  .lila-hover:hover{
+    background: lightcoral;
+  }
+  
   .checkbtn{
     font-size: 30px;
     color: white;
@@ -145,7 +146,74 @@
   #check{
     display: none;
   }
+
+  section{
+    background-image: url("image/about-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size:  100% 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title{
+  color: #ffffff;
+  margin: 10px;
+  display: grid;
+  place-items: center;
+  text-shadow: 0 0 3px #4e4b4b, 0 0 5px #9e9ec0;
+  }
+
+  .title p{
+    margin-bottom: 5px;
+  }
+
+  .card img{
+    width: 150px;
+  }
+
+  .card{
+    border-style: solid;
+    width: 300px;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    border-color: #FFFF;
+    
+  }
+
+  .text{
+    border-style: solid;
+    width: 250px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .text p{
+    margin: 5px;
+  }
+
   @media (max-width: 450px){
+
+    section{
+      flex-direction: column;
+      height: 100%;
+      background-size: cover;
+    }
+
+    .top{
+      margin-top: 100px;
+    }
+
     .checkbtn{
       display: block;
     }

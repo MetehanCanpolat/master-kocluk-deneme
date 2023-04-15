@@ -8,10 +8,53 @@
     font-family: 'Ubuntu', sans-serif;
   }
   section{
-    background-image: url("image/students-1.png");
+    background-image: url("image/services-bg.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:  100% 100vh;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title{
+    background-color: rgba(10, 8, 8, 0.5);
+    color: #fff;
+    width: 600px;
+    height: 40px;
+    text-align: center;
+    font-size: 35px;
+    border-radius: 20px;
+  }
+
+  .text{
+    background-color: #FFFF;
+    width: 500px;
+    height: 30px;
+    margin: 10px;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+
+  .offer-box{
+    background-color: rgba(10, 8, 8, 0.5);
+    color: #fff;
+    width: 600px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+
+  .offer-box img{
+    width: 40px;
   }
   
 
@@ -54,7 +97,7 @@
     align-items: center;
     text-decoration: none;
     color: #FFFF;
-    width: 190px;
+    width: 200px;
   }
 
   .footer-contact a:hover{
@@ -125,13 +168,19 @@
     transition: .5s;
   } 
   .yellow-hover:hover{
-    background: #CC9933;
+    background: #ffe100;
   }
   a.red-hover, a:hover{
     background: #FF0099;
   }
   .green-hover:hover{
     background: #66CC66;
+  }
+  .orange-hover:hover{
+    background: orange;
+  }
+  .lila-hover:hover{
+    background: lightcoral;
   }
   .checkbtn{
     font-size: 30px;
@@ -201,6 +250,49 @@
     .footer-contact{
       margin-top: 40px;
       margin-bottom: 40px;
+    }
+
+    .title{
+      background-color: #221b20;
+      opacity: 1;
+      color: #fff;
+      width: 350px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      border-radius: 20px;
+      margin-bottom: 7px;
+    }
+  
+    .text{
+      background-color: #FFFF;
+      width: 300px;
+      height: 20px;
+      margin: 8px;
+      display: grid;
+      place-items: center;
+      font-size: 12px;
+      border-radius: 20px;
+    }
+  
+    .offer-box{
+      background-color: #221b20;
+      opacity: 1;
+      color: #fff;
+      width: 350px;
+      height: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content:space-around;
+      align-items: center;
+      font-size: 14.5px;
+      border-radius: 20px;
+      margin-top: 15px;
+    }
+  
+    .offer-box img{
+      width: 30px;
     }
 
 

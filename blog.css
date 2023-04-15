@@ -8,67 +8,12 @@
     font-family: 'Ubuntu', sans-serif;
   }
   section{
-    background-image: url("image/contact-bg.jpeg");
+    background-image: url("image/blog-bg.jpeg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100vh;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .phone div{
-    display: flex;
-    flex-direction: column;
-  }
-
-  .box{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-bottom-style: solid ;
-    width: 300px;
-    border-width: 2px;
-    border-color: rgba(10, 8, 8, 0.5);
-    margin: 10px;
-  }
-
-  .box a{
-   text-decoration: none;
-   color: #2c3e50;
-  }
-
-  .contact{
-    margin: 20px;
-    font-size: 25px;
-    letter-spacing: 5px;
-    background-color:  rgba(255, 255, 255, 0.5);
-    width: 375px;
-    height: 35px;
-    display: grid;
-    place-items: center;
-    border-radius: 10px;
   }
   
-  .card{
-    background-color: #fff;
-    width: 400px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-  }
-
-  .card img{
-    width: 30px;
-  }
-
-  .card a:hover{
-    background-color: rgba(10, 8, 8, 0.3) ;
-  }
 
 
   footer{
@@ -185,10 +130,10 @@
   .red-hover:hover{
     background: #FF0099;
   }
-  a.green-hover, a:hover{
+  .green-hover:hover{
     background: #66CC66;
   }
-  .orange-hover:hover{
+  a.orange-hover, a:hover{
     background: orange;
   }
   .lila-hover:hover{
@@ -206,16 +151,9 @@
   #check{
     display: none;
   }
+
+
   @media (max-width: 450px){
-  
-    .box{
-      width: 250px;
-     
-    }
-    
-    .card{
-      width: 300px;
-    }
     .checkbtn{
       display: block;
     }
@@ -264,13 +202,18 @@
     }
 
     .fixed-telephone a{
-      font-size: 0;        
+    
+      font-size: 0;       
       border-width: 0;
     }
 
     .footer-contact{
       margin-top: 40px;
       margin-bottom: 40px;
+    }
+
+    section{
+      background-size: cover;
     }
 
   }
@@ -302,6 +245,7 @@
     border-radius: 100%;
     margin: 3px;
     }
+
   .attribution{
     display: flex;
     flex-direction: row;

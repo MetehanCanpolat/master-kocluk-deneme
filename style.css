@@ -118,13 +118,19 @@
     transition: .5s;
   } 
   .yellow-hover:hover{
-    background: #CC9933;
+    background: #ffe100;
   }
   .red-hover:hover{
     background: #FF0099;
   }
   .green-hover:hover{
     background: #66CC66;
+  }
+  .orange-hover:hover{
+    background: orange;
+  }
+  .lila-hover:hover{
+    background: lightcoral;
   }
   .checkbtn{
     font-size: 30px;
@@ -138,7 +144,7 @@
   #check{
     display: none;
   }
-  @media (max-width: 450px){
+  @media screen and (max-width: 450px){
     .checkbtn{
       display: block;
     }
@@ -198,10 +204,27 @@
 
     .text{
       color: #FFFF;
-      width: 250px;
       background-color: rgba(30, 23, 23, 0.5);
     }
+
+   
+
   }
+
+  .text{
+    margin: 50px;
+    color: #FFFF;
+    background-color: rgba(30, 23, 23, 0.4); 
+    line-height: 25px;
+    width: fit-content;
+}
+
+   .title{
+  color: #fff;
+  text-shadow: 0 0 3px rgba(30, 25, 25, 0.8);
+  font-size: 55px;
+  margin: 50px;
+   }
 
   .fixed-telephone a{
     margin-top: 80vh;
@@ -280,17 +303,5 @@
     justify-content: center;
   }
 
-  .text{
-      margin: 50px;
-      color: #FFFF;
-      background-color: rgba(30, 23, 23, 0.4);   
-  }
- 
-
-  .title{
-    color: #fff;
-    text-shadow: 0 0 3px rgba(30, 25, 25, 0.8);
-    font-size: 55px;
-    margin: 50px;
-  }
+  
   
